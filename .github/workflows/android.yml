@@ -30,7 +30,7 @@ jobs:
       - name: Build with gradle
         env:
           API_KEY: ${{ secrets.API_KEY }}
-        uses: gradle/gradle-build-action@v2.4.2
+        uses: gradle/gradle-build-action@v2.6.0
         with:
           gradle-version: nightly
           arguments: assembleDebug
